@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main__container">
+      <form id="form" class="form__container">
+        <div class="form__name">
+          <p>Felhasználó regisztráció</p>
+        </div>
+        <div class="form__input">
+          <label for="name">Név</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div>
+          <p class="error__message error__name"></p>
+        </div>
+        <div class="form__input">
+          <label for="email">E-mail cím</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div>
+          <p class="error__message error__mail"></p>
+        </div>
+        <div class="form__input">
+          <label for="emailAgain">E-mail cím ismét</label>
+          <input type="email" name="emailAgain" id="emailAgain" />
+        </div>
+        <div>
+          <p class="error__message error__mailAgain"></p>
+        </div>
+        <div class="form__input">
+          <label for="from">Honnan hallott rólunk?</label>
+          <select name="from" name="from" id="from">
+            <option value="default">Kérlek válassz...</option>
+            <option value="net">Internetről</option>
+            <option value="tv">Televízióból</option>
+            <option value="other">Egyéb helyről</option>
+          </select>
+        </div>
+        <div>
+          <p class="error__message error__from"></p>
+        </div>
+        <div class="form__input--gdpr">
+          <input type="checkbox" name="gdpr" id="gdpr" required />
+          <label for="gdpr">Elfogadom az adatvédelmi tájékoztatót.</label>
+        </div>
+        <div>
+          <p class="error__message error__gdpr"></p>
+        </div>
+        <div class="form__input">
+          <button class="btn__reg" type="submit">Regisztrálok!</button>
+        </div>
+      </form>
+      <div class="form__message" hidden>
+        <p>Sikeresen regisztráltál az oldalunkra!</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
